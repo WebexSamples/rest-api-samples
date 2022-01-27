@@ -19,7 +19,7 @@ The [Webex Meetings REST API](https://developer.webex.com/docs/meetings) enables
 
 https://developer.webex.com/docs/api/v1/meetings/create-a-meeting
 
-See sample code in this repo under ./meetings/create/
+See sample code in this repo under `./meetings/create/`
 
 #### READ a Meeting
 
