@@ -19,6 +19,8 @@ The [Webex Meetings REST API](https://developer.webex.com/docs/meetings) enables
 
 https://developer.webex.com/docs/api/v1/meetings/create-a-meeting
 
+See sample code in this repo under ./meetings/create/
+
 #### READ a Meeting
 
 https://developer.webex.com/docs/api/v1/meetings/get-a-meeting
@@ -31,8 +33,20 @@ https://developer.webex.com/docs/api/v1/meetings/update-a-meeting
 
 https://developer.webex.com/docs/api/v1/meetings/delete-a-meeting
 
-## Further Reading
+## Language Reference
 
-Check out these resources for more:
+### Node
 
+The version of Node used for development and testing is v16.13.2, with NPM v8.1.2.
+
+- https://nodejs.dev/learn/making-http-requests-with-nodejs
+
+
+## Don't be a Stranger
+
+- https://developer.webex.com/docs
 - https://developer.webex.com/blog
+- https://developer.webex.com/support
+- @WebexDevs: https://twitter.com/webexdevs
+
+Made with <3 by the Webex Developer Evangelist Team at Cisco
