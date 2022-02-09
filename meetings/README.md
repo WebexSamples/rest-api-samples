@@ -1,4 +1,4 @@
-# Cisco > Webex > REST API Samples > Meetings
+# Webex REST API Sample Code > Meetings
 
 The [Webex Meetings REST API](https://developer.webex.com/docs/meetings) enables seamless integration of Webex Meetings into your websites, apps, and services. Schedule meetings, invite meeting attendees, update preferences, and more.
 
@@ -10,7 +10,7 @@ The acronymn CRUD stands for: (C)reate, (R)ead, (U)pdate, (D)elete, which forms 
 
 Create a Webex meeting, using the REST API.
 
-See `./create/README.md`
+See [./create/README.md](./create/README.md)
 
 ### READ
 
@@ -32,4 +32,4 @@ https://developer.webex.com/docs/api/v1/meetings/delete-a-meeting
 - https://developer.webex.com/support
 - @WebexDevs: https://twitter.com/webexdevs
 
-Made with <3 by the Webex Developer Evangelist Team at Cisco
+Made with <3 by the Webex Developer Evangelism Team at Cisco

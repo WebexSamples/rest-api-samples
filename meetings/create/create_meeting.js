@@ -32,9 +32,9 @@ const myWebexDeveloperToken = 'REPLACE ME WITH YOUR WEBEX DEVELOPER PERSONAL ACC
 
 
 const body = JSON.stringify({
-  title: 'Book Club Discussion: Curious George',
-  start: '2022-08-12T13:51:43-04:00', // https://en.wikipedia.org/wiki/ISO_8601 format
-  end:   '2022-08-12T14:38:16-04:00'  // Replace the start/end with the times you'd like
+  title: 'Book Club Discussion: Curious George', // String, Required | Meeting title. The title can be a maximum of 128 characters long.
+  start: '2022-08-12T13:51:43-04:00',            // String, Required | https://en.wikipedia.org/wiki/ISO_8601 format
+  end:   '2022-08-12T14:38:16-04:00'             // String, Required | Replace the start/end with the times you'd like
 });
 
 const options = {
