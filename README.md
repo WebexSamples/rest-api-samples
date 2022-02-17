@@ -35,6 +35,8 @@ See sample code in this repo under [./meetings/create/](./meetings/create/)
 
 https://developer.webex.com/docs/api/v1/meetings/get-a-meeting
 
+See sample code in this repo under [./meetings/read/](./meetings/read/)
+
 #### UPDATE a Meeting
 
 https://developer.webex.com/docs/api/v1/meetings/update-a-meeting
