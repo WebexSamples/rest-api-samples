@@ -1,6 +1,6 @@
 # Webex REST API Sample Code > Meetings > Read
 
-This directory contains sample code demonstrating implementations of a REST client that calls the Meetings API to create a meeting, in:
+This directory contains sample code demonstrating implementations of a REST client that calls the Meetings API to read a meeting, in:
 
  - Node: [./list_meetings.js](./list_meetings.js)
  - PHP: [./list_meetings.php](./list_meetings.php)
