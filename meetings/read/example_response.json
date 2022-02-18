@@ -1,0 +1,86 @@
+{
+    "items": [
+        {
+            "id": "870f51ff287b41be84648412901e0402_20191101T120000Z",
+            "meetingSeriesId": "870f51ff287b41be84648412901e0402",
+            "meetingNumber": "123456789",
+            "title": "Example Daily Meeting",
+            "agenda": "Example Agenda",
+            "password": "BgJep@43",
+            "phoneAndVideoSystemPassword": "12345678",
+            "meetingType": "scheduledMeeting",
+            "state": "ready",
+            "isModified": false,
+            "timezone": "UTC",
+            "start": "2019-11-01T12:00:00Z",
+            "end": "2019-11-01T13:00:00Z",
+            "hostUserId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9jN2ZkNzNmMi05ZjFlLTQ3ZjctYWEwNS05ZWI5OGJiNjljYzY",
+            "hostDisplayName": "John Andersen",
+            "hostEmail": "john.andersen@example.com",
+            "hostKey": "123456",
+            "siteUrl": "site4-example.webex.com",
+            "webLink": "https://site4-example.webex.com/site4/j.php?MTID=md41817da6a55b0925530cb88b3577b1e",
+            "sipAddress": "123456789@site4-example.webex.com",
+            "dialInIpAddress": "192.168.100.100",
+            "enabledAutoRecordMeeting": false,
+            "allowAnyUserToBeCoHost": false,
+            "enabledJoinBeforeHost": false,
+            "enableConnectAudioBeforeHost": false,
+            "joinBeforeHostMinutes": 0,
+            "excludePassword": false,
+            "publicMeeting": false,
+            "reminderTime": 10,
+            "enableAutomaticLock": false,
+            "automaticLockMinutes": 0,
+            "allowFirstUserToBeCoHost": false,
+            "allowAuthenticatedDevices": false,
+            "telephony": {
+                "accessCode": "1234567890",
+                "callInNumbers": [
+                    {
+                        "label": "US Toll",
+                        "callInNumber": "123456789",
+                        "tollType": "toll"
+                    }
+                ],
+                "links": [
+                    {
+                        "rel": "globalCallinNumbers",
+                        "href": "/api/v1/meetings/870f51ff287b41be84648412901e0402_20191101T120000Z/globalCallinNumbers",
+                        "method": "GET"
+                    }
+                ]
+            },
+            "integrationTags": [
+                "dbaeceebea5c4a63ac9d5ef1edfe36b9",
+                "85e1d6319aa94c0583a6891280e3437d",
+                "27226d1311b947f3a68d6bdf8e4e19a1"
+            ]
+        },
+        {
+            "id": "870f51ff287b41be84648412901e0402_I_167427437874906709",
+            "meetingSeriesId": "870f51ff287b41be84648412901e0402",
+            "scheduledMeetingId": "870f51ff287b41be84648412901e0402_20191101T120000Z",
+            "title": "Example Daily Meeting",
+            "agenda": "Example Agenda",
+            "meetingType": "meeting",
+            "state": "ended",
+            "excludePassword": false,
+            "publicMeeting": false,
+            "enableAutomaticLock": false,
+            "timezone": "UTC",
+            "start": "2019-11-01T12:12:15Z",
+            "end": "2019-11-01T12:51:33Z",
+            "hostUserId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9jN2ZkNzNmMi05ZjFlLTQ3ZjctYWEwNS05ZWI5OGJiNjljYzY",
+            "hostDisplayName": "John Andersen",
+            "hostEmail": "john.andersen@example.com",
+            "siteUrl": "site4-example.webex.com",
+            "webLink": "https://site4-example.webex.com/site4/j.php?MTID=870f51ff287b41be84648412901e0402_I_167427437874906709",
+            "integrationTags": [
+                "dbaeceebea5c4a63ac9d5ef1edfe36b9",
+                "85e1d6319aa94c0583a6891280e3437d",
+                "27226d1311b947f3a68d6bdf8e4e19a1"
+            ]
+        }
+    ]
+}

@@ -14,7 +14,9 @@ See [./create/README.md](./create/README.md)
 
 ### READ
 
-https://developer.webex.com/docs/api/v1/meetings/get-a-meeting
+Read your account's Webex meetings, using the REST API.
+
+See [./read/README.md](./read/README.md)
 
 ### UPDATE
 
