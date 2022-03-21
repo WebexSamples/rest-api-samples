@@ -20,7 +20,9 @@ See [./read/README.md](./read/README.md)
 
 ### UPDATE
 
-https://developer.webex.com/docs/api/v1/meetings/update-a-meeting
+Update a Webex meeting, using the REST API.
+
+See [./update/README.md](./update/README.md)
 
 ### DELETE
 
