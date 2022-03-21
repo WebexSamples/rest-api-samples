@@ -41,6 +41,8 @@ See sample code in this repo under [./meetings/read/](./meetings/read/)
 
 https://developer.webex.com/docs/api/v1/meetings/update-a-meeting
 
+See sample code in this repo under [./meetings/update/](./meetings/update/)
+
 #### DELETE a Meeting
 
 https://developer.webex.com/docs/api/v1/meetings/delete-a-meeting
