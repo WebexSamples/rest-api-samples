@@ -15,12 +15,14 @@
  *         Personal Access Token" in the middle of the page.
  * Step 3: Replace the string on the line that defines const myWebexDeveloperToken,
  *         just below, with your personal bearer (access) token. Hit "save".
- * Step 4: Run this file with node from within
+ * Step 4: Run an example from https://github.com/WebexSamples/rest-api-samples/tree/main/meetings/read
+ *         to obtain a meeting ID. Replace line that defines path in options object withyour meeting ID.
+ * Step 5: Run this file with node from within
  *         this directory on the command line:
  * 
  *         node ./create_meeting.js
  * 
- * Step 5: Profit. Get your app listed in the Webex App Hub!
+ * Step 6: Profit. Get your app listed in the Webex App Hub!
  *         https://apphub.webex.com/
  * 
  */
@@ -69,15 +71,15 @@ const req = https.request(options, (res) => {
         console.error('Error: ' + e.message); // https://nodejs.org/api/errors.html#errormessage_1
     });
 
-    });
+});
 
-    req.on('error', (e) => {
-        console.error(e);
-    });
+req.on('error', (e) => {
+    console.error(e);
+});
 
-    req.write(body);
+req.write(body);
 
-    req.end();
+req.end();
 
 /**
   * Expected output:
