@@ -127,6 +127,3 @@ req.end();
   * in this directory: ./example_response.json
   * 
   */
- // *** ACTUAL RESPONSE OBJECT *** //
- // statusCode: 200
- // 
