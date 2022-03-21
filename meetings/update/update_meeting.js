@@ -20,7 +20,7 @@
  * Step 5: Run this file with node from within
  *         this directory on the command line:
  * 
- *         node ./create_meeting.js
+ *         node ./update_meeting.js
  * 
  * Step 6: Profit. Get your app listed in the Webex App Hub!
  *         https://apphub.webex.com/
