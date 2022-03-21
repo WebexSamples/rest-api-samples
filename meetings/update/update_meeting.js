@@ -16,7 +16,8 @@
  * Step 3: Replace the string on the line that defines const myWebexDeveloperToken,
  *         just below, with your personal bearer (access) token. Hit "save".
  * Step 4: Run an example from https://github.com/WebexSamples/rest-api-samples/tree/main/meetings/read
- *         to obtain a meeting ID. Replace line that defines path in options object with your meeting ID.
+ *         to obtain a meeting ID and password. Replace lines that define
+ *         const `meetingID` & `meetingPassword` with your meeting ID & password.
  * Step 5: Run this file with node from within
  *         this directory on the command line:
  * 
@@ -27,15 +28,17 @@
  * 
  */
 
- const https = require('https'); // https://nodejs.org/api/https.html
+const https = require('https'); // https://nodejs.org/api/https.html
 
 
 const myWebexDeveloperToken = 'REPLACE WITH API KEY';
+const meetingID = 'REPLACE WITH MEETING ID';
+const meetingPassword = 'REPLACE WITH MEETING PASSWORD';
 
 const body = JSON.stringify({
    title: 'Incorporating Vibranium into Modern Electronics: Pt. 1', // String, Required | Meeting title. The title can be a maximum of 128 characters long.
-   agenda: 'This meeting`s agenda includes discussing plans to incorporate new, extremely conductive copper alloys which create their own electro-magnetic fields.', // example of one of many options to update
-   password: 'REPLACE WITH MEETING PASSWORD',                  // String, Required
+   agenda: `This meeting's agenda includes discussing plans to incorporate new, extremely conductive copper alloys which create their own electro-magnetic fields.`, // example of one of many options to update
+   password: meetingPassword,                  // String, Required
    start: '2022-06-19T19:00:00Z',            // String, Required | https://en.wikipedia.org/wiki/ISO_8601 format
    end:   '2022-06-19T21:00:00Z'             // String, Required | Replace the start/end with the times you'd like
 });
@@ -44,7 +47,7 @@ const body = JSON.stringify({
 const options = {
     method:   'PUT',          // https://en.wikipedia.org/wiki/Representational_state_transfer#Semantics_of_HTTP_methods
     hostname: 'webexapis.com', // https://developer.webex.com/docs/basics
-    path:     '/v1/meetings/{REPLACE WITH MEETINGID}',  // https://developer.webex.com/docs/meetings
+    path:     `/v1/meetings/${meetingID}`,  // https://developer.webex.com/docs/meetings
     port:     443,             // https://en.wikipedia.org/wiki/HTTPS#Technical
     headers:  {
      'Authorization':  'Bearer ' + myWebexDeveloperToken, // https://oauth.net/2/bearer-tokens/
