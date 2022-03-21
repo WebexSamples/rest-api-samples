@@ -16,7 +16,7 @@
  * Step 3: Replace the string on the line that defines const myWebexDeveloperToken,
  *         just below, with your personal bearer (access) token. Hit "save".
  * Step 4: Run an example from https://github.com/WebexSamples/rest-api-samples/tree/main/meetings/read
- *         to obtain a meeting ID. Replace line that defines path in options object withyour meeting ID.
+ *         to obtain a meeting ID. Replace line that defines path in options object with your meeting ID.
  * Step 5: Run this file with node from within
  *         this directory on the command line:
  * 
