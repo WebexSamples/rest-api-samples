@@ -45,6 +45,8 @@ https://developer.webex.com/docs/api/v1/meetings/update-a-meeting
 
 https://developer.webex.com/docs/api/v1/meetings/delete-a-meeting
 
+See sample code in this repo under [./meetings/delete/](./meetings/delete/)
+
 ## Language Reference
 
 ### Node
