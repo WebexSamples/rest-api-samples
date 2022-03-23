@@ -24,7 +24,9 @@ https://developer.webex.com/docs/api/v1/meetings/update-a-meeting
 
 ### DELETE
 
-https://developer.webex.com/docs/api/v1/meetings/delete-a-meeting
+Create a Webex meeting, using the REST API.
+
+See [./delete/README.md](./delete/README.md)
 
 
 ## Don't be a Stranger
