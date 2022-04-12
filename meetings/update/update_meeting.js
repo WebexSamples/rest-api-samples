@@ -37,7 +37,7 @@ const meetingPassword = 'REPLACE WITH MEETING PASSWORD';
 
 const body = JSON.stringify({
    title: 'Incorporating Vibranium into Modern Electronics: Pt. 1', // String, Required | Meeting title. The title can be a maximum of 128 characters long.
-   agenda: `This meeting's agenda includes discussing plans to incorporate new, extremely conductive copper alloys which create their own electro-magnetic fields.`, // example of one of many options to update
+   agenda: 'This meeting\'s agenda includes discussing plans to incorporate new, extremely conductive copper alloys which create their own electro-magnetic fields. This meeting should be MARVELous! *wink*', // example of one of many options to update
    password: meetingPassword,                  // String, Required
    start: '2022-06-19T19:00:00Z',            // String, Required | https://en.wikipedia.org/wiki/ISO_8601 format
    end:   '2022-06-19T21:00:00Z'             // String, Required | Replace the start/end with the times you'd like
