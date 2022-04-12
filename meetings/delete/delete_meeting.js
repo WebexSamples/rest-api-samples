@@ -26,7 +26,7 @@
  * Step 6: Profit. Get your app listed in the Webex App Hub!
  *         https://apphub.webex.com/
  * 
- * CODE SNIPPETS FROM MY COLLEAGUE @DavidLiedle rest-api-samples/meetings/create/
+ * 
  */
 
  const https = require('https'); // https://nodejs.org/api/https.html
