@@ -5,8 +5,8 @@
  *   \ V  V /  __/ |_) |  __/>  <         @WebexDevs
  *    \_/\_/ \___|_.__/ \___/_/\_\
  *
- * READ (list) meetings in Webex with the REST API in Node
- * https://developer.webex.com/docs/api/v1/meetings/list-meetings
+ * READ (get) meeting in Webex with the REST API in Node
+ * https://developer.webex.com/docs/api/v1/meetings/get-a-meeting
  *
  * Step 0: Have a (free) Webex account: https://cart.webex.com/sign-up
  * Step 1: Log in to https://developer.webex.com/login
@@ -15,12 +15,16 @@
  *         Personal Access Token" in the middle of the page.
  * Step 3: Replace the string on the line that defines const myWebexDeveloperToken,
  *         just below, with your personal bearer (access) token. Hit "save".
- * Step 4: Run this file with node (https://nodejs.org/en/download/)
+ * Step 4: Run the sample at https://github.com/Aaron-TheCreator/rest-api-samples/tree/main/meetings/create.
+ *         Copy the meeting ID from the "id" property in the response object.
+ *         Replace the string on the line that defines const meetingID, 
+ *         just below, with your copied meetingID value. Hit "save".
+ * Step 5: Run this file with node (https://nodejs.org/en/download/)
  *         from within this directory on the command line:
  *
- *         node ./list_meetings.js
+ *         node ./get_meeting.js
  *
- * Step 5: Profit. Get your app listed in the Webex App Hub!
+ * Step 6: Profit. Get your app listed in the Webex App Hub!
  *         https://apphub.webex.com/
  *
  */
@@ -60,21 +64,47 @@ req.end()
 
 /**
  * Expected output:
- *
- *
- *     The title of the first meeting in the list is: My Meeting Title
- *
- *
- * Where "My Meeting Title" represents the title of the first meeting
- * in the list of meetings in your account.
- *
- * To view all of the fields for the first meeting in the list, simply
- * remove the .title from JSON.parse(data).items[0].title above.
- *
- * To see every single field for every single meeting on your account,
- * just strip that further down to: JSON.parse(data)
- *
- * NOTE: If you do not have meetings in your account, check out the code
- *       example in ../create/create_meeting.js and run that. Then come
- *       back here, and you'll have a meeting in your account to retrieve.
+ * 
+ * The HTTPS request should receive a status code. We expect a 200.
+ * 
+ * The body of the response is JSON text. We expect a single object
+ * containing details of the meeting with "id" property matching value passed in.
+ * These details should include at least the following fields:
+ * 
+ *  - id
+ *  - meetingNumber
+ *  - title
+ *  - password
+ *  - phoneAndVideoSystemPassword
+ *  - meetingType
+ *  - state
+ *  - timezone
+ *  - start
+ *  - end
+ *  - hostUserId
+ *  - hostDisplayName
+ *  - hostEmail
+ *  - hostKey
+ *  - siteUrl
+ *  - webLink
+ *  - sipAddress
+ *  - dialInIpAddress
+ *  - enabledAutoRecordMeeting
+ *  - allowAnyUserToBeCoHost
+ *  - allowFirstUserToBeCoHost
+ *  - allowAuthenticatedDevices
+ *  - enabledJoinBeforeHost
+ *  - joinBeforeHostMinutes
+ *  - enableConnectAudioBeforeHost
+ *  - excludePassword
+ *  - publicMeeting
+ *  - enableAutomaticLock
+ *  - telephony
+ *    - accessCode
+ *    - callInNumbers
+ *    - links
+ * 
+ * An example of the response JSON may be found
+ * in this directory: ./example_response.json
+ * 
  */
