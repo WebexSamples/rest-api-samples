@@ -105,6 +105,6 @@ req.end()
  *    - links
  * 
  * An example of the response JSON may be found
- * in this directory: ./example_response.json
+ * in this directory: ./get_example_response.json
  * 
  */
