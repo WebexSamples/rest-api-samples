@@ -29,10 +29,10 @@
  *
  */
 
-const https = require("https") // https://nodejs.org/api/https.html
+const https = require("https"); // https://nodejs.org/api/https.html
 
-const myWebexDeveloperToken = "REPLACE WITH TOKEN"
-const meetingID = "REPLACE WITH MEETING ID"
+const myWebexDeveloperToken = "REPLACE WITH TOKEN";
+const meetingID = "REPLACE WITH MEETING ID";
 
 const options = {
 	method: "GET",
@@ -42,25 +42,25 @@ const options = {
 	headers: {
 		Authorization: "Bearer " + myWebexDeveloperToken, // Make sure you set your token above!
 	},
-}
+};
 
 const req = https.request(options, (res) => {
-	let data = ""
+	let data = "";
 
 	res.on("data", (chunk) => {
-		data += chunk
-	})
+		data += chunk;
+	});
 
 	res.on("end", () => {
-		console.log("This meeting's information includes the following: " + data)
-	})
+		console.log("This meeting's information includes the following: " + data);
+	});
 
 	res.on("error", (e) => {
 		console.error("Error: " + e.message)
-	})
+	});
 })
 
-req.end()
+req.end();
 
 /**
  * Expected output:
