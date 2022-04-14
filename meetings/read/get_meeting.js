@@ -58,7 +58,7 @@ const req = https.request(options, (res) => {
 	res.on("error", (e) => {
 		console.error("Error: " + e.message);
 	});
-})
+});
 
 req.end();
 
