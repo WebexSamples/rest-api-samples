@@ -4,10 +4,10 @@
  *  \ \ /\ / / _ \ '_ \ / _ \ \/ /
  *   \ V  V /  __/ |_) |  __/>  <         @WebexDevs
  *    \_/\_/ \___|_.__/ \___/_/\_\
- * 
+ *
  * READ (list) meetings in Webex with the REST API in Node
  * https://developer.webex.com/docs/api/v1/meetings/list-meetings
- * 
+ *
  * Step 0: Have a (free) Webex account: https://cart.webex.com/sign-up
  * Step 1: Log in to https://developer.webex.com/login
  * Step 2: Find your bearer token at
@@ -17,12 +17,12 @@
  *         just below, with your personal bearer (access) token. Hit "save".
  * Step 4: Run this file with node (https://nodejs.org/en/download/)
  *         from within this directory on the command line:
- * 
+ *
  *         node ./list_meetings.js
- * 
+ *
  * Step 5: Profit. Get your app listed in the Webex App Hub!
  *         https://apphub.webex.com/
- * 
+ *
  */
 
 const https = require('https'); // https://nodejs.org/api/https.html
@@ -30,17 +30,16 @@ const https = require('https'); // https://nodejs.org/api/https.html
 const myWebexDeveloperToken = 'REPLACE ME WITH YOUR WEBEX DEVELOPER PERSONAL ACCESS TOKEN';
 
 const options = {
-  method:   'GET',
+  method: 'GET',
   hostname: 'webexapis.com',
-  path:     '/v1/meetings',
-  port:     443,
-  headers:  {
-    'Authorization':  'Bearer ' + myWebexDeveloperToken // Make sure you set your token above!
-  }
-}
+  path: '/v1/meetings',
+  port: 443,
+  headers: {
+    Authorization: `Bearer ${myWebexDeveloperToken}`, // Make sure you set your token above!
+  },
+};
 
 const req = https.request(options, (res) => {
-
   let data = '';
 
   res.on('data', (chunk) => {
@@ -49,37 +48,35 @@ const req = https.request(options, (res) => {
 
   res.on('end', () => {
     console.log(
-        'The title of the first meeting in the list is: '
-        + JSON.parse(data).items[0].title
-        );
+      `The title of the first meeting in the list is: ${
+        JSON.parse(data).items[0].title}`,
+    );
   });
 
   res.on('error', (e) => {
-    console.error('Error: ' + e.message);
+    console.error(`Error: ${e.message}`);
   });
-
 });
 
 req.end();
 
 /**
  * Expected output:
- * 
- * 
+ *
+ *
  *     The title of the first meeting in the list is: My Meeting Title
- * 
- * 
+ *
+ *
  * Where "My Meeting Title" represents the title of the first meeting
  * in the list of meetings in your account.
- * 
+ *
  * To view all of the fields for the first meeting in the list, simply
  * remove the .title from JSON.parse(data).items[0].title above.
- * 
+ *
  * To see every single field for every single meeting on your account,
  * just strip that further down to: JSON.parse(data)
- * 
+ *
  * NOTE: If you do not have meetings in your account, check out the code
  *       example in ../create/create_meeting.js and run that. Then come
  *       back here, and you'll have a meeting in your account to retrieve.
  */
-
