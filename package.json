@@ -1,0 +1,13 @@
+{
+  "name": "rest-api-samples",
+  "packageManager": "yarn@3.2.0",
+  "scripts": {
+    "lint": "npx eslint meetings",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
