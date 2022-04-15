@@ -17,7 +17,7 @@
  *         just below, with your personal bearer (access) token. Hit "save".
  * Step 4: Run the sample at https://github.com/Aaron-TheCreator/rest-api-samples/tree/main/meetings/create.
  *         Copy the meeting ID from the "id" property in the response object.
- *         Replace the string on the line that defines const meetingID, 
+ *         Replace the string on the line that defines const meetingID,
  *         just below, with your copied meetingID value. Hit "save".
  * Step 5: Run this file with node (https://nodejs.org/en/download/)
  *         from within this directory on the command line:
@@ -29,48 +29,48 @@
  *
  */
 
-const https = require("https"); // https://nodejs.org/api/https.html
+const https = require('https'); // https://nodejs.org/api/https.html
 
-const myWebexDeveloperToken = "REPLACE WITH TOKEN";
-const meetingID = "REPLACE WITH MEETING ID";
+const myWebexDeveloperToken = 'REPLACE WITH TOKEN';
+const meetingID = 'REPLACE WITH MEETING ID';
 
 const options = {
-	method: "GET",
-	hostname: "webexapis.com",
-	path: `/v1/meetings/${meetingID}`, // Make sure you set your meetingID above !
-	port: 443,
-	headers: {
-		Authorization: "Bearer " + myWebexDeveloperToken, // Make sure you set your token above!
-	},
+  method: 'GET',
+  hostname: 'webexapis.com',
+  path: `/v1/meetings/${meetingID}`, // Make sure you set your meetingID above !
+  port: 443,
+  headers: {
+    Authorization: `Bearer ${myWebexDeveloperToken}`, // Make sure you set your token above!
+  },
 };
 
 const req = https.request(options, (res) => {
-	let data = "";
+  let data = '';
 
-	res.on("data", (chunk) => {
-		data += chunk;
-	});
+  res.on('data', (chunk) => {
+    data += chunk;
+  });
 
-	res.on("end", () => {
-		console.log("This meeting's information includes the following: " + data);
-	});
+  res.on('end', () => {
+    console.log(`This meeting's information includes the following: ${data}`);
+  });
 
-	res.on("error", (e) => {
-		console.error("Error: " + e.message);
-	});
+  res.on('error', (e) => {
+    console.error(`Error: ${e.message}`);
+  });
 });
 
 req.end();
 
 /**
  * Expected output:
- * 
+ *
  * The HTTPS request should receive a status code. We expect a 200.
- * 
+ *
  * The body of the response is JSON text. We expect a single object
  * containing details of the meeting with "id" property matching value passed in.
  * These details should include at least the following fields:
- * 
+ *
  *  - id
  *  - meetingNumber
  *  - title
@@ -103,8 +103,8 @@ req.end();
  *    - accessCode
  *    - callInNumbers
  *    - links
- * 
+ *
  * An example of the response JSON may be found
  * in this directory: ./get_example_response.json
- * 
+ *
  */
