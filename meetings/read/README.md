@@ -3,6 +3,7 @@
 This directory contains sample code demonstrating implementations of a REST client that calls the Meetings API to read a meeting, in:
 
  - Node: [./list_meetings.js](./list_meetings.js)
+         [./get_meeting.js](./get_meeting.js)
  - PHP: [./list_meetings.php](./list_meetings.php)
 
 
@@ -17,6 +18,8 @@ See `Get a Token` in the main [/README.md](../../README.md)
 This sample is written in JavaScript, intended to be run via Node:
 
 `node ./list_meetings.js`
+
+`node ./get_meeting.js`
 
 At the time of writing, we're using the latest LTS release of Node.
 

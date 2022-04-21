@@ -54,7 +54,7 @@ echo $response."\n"; // View result
  * Expected output:
  * 
  * JSON text with an array of meetings,
- * as seen in the example JSON file in this directory: ./example_response.json
+ * as seen in the example JSON file in this directory: ./list_example_response.json
  * 
  * NOTE: If you do not have meetings in your account, check out the code
  *       example in ../create/create_meeting.js and run that. Then come
