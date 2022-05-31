@@ -82,5 +82,55 @@
  
  /**
   * Expected output:
+  * statusCode: 200
+  * {
+  * id: 'd22a9f343201470f8443b0ab01c81855',
+  * meetingNumber: '25710538727',
+  * title: 'WebDev Meeting w/ Simultaneous Interpretation',
+  * password: 'x8YPCFimS73',
+  * phoneAndVideoSystemPassword: '98972346',
+  * meetingType: 'meetingSeries',
+  * state: 'active',
+  * timezone: 'UTC',
+  * start: '2022-08-12T17:51:00Z',
+  * end: '2022-08-12T18:38:00Z',
+  * hostUserId: 'Y2lzY29zcGFyazovL3VzL1BFT1BMRS9iMWQ4ZGQ2MC0yZDRjLTQxNmYtYWVkNS03NjQ2NjcxZTIwMzM',
+  * hostDisplayName: 'Joe Zanini',
+  * hostEmail: 'jozanini@cisco.com',
+  * hostKey: '154507',
+  * siteUrl: 'cisco.webex.com',
+  * webLink: 'https://cisco.webex.com/cisco/j.php?MTID=med3b9c0ae544ea8d015d2df2361ccc52',
+  * sipAddress: '25710538727@webex.com',
+  * dialInIpAddress: '173.243.2.68',
+  * enabledAutoRecordMeeting: false,
+  * allowAnyUserToBeCoHost: false,
+  * allowFirstUserToBeCoHost: false,
+  * allowAuthenticatedDevices: false,
+  * enabledJoinBeforeHost: true,
+  * joinBeforeHostMinutes: 5,
+  * enableConnectAudioBeforeHost: true,
+  * excludePassword: false,
+  * publicMeeting: false,
+  * enableAutomaticLock: false,
+  * unlockedMeetingJoinSecurity: 'allowJoin',
+  * telephony: {
+  *   accessCode: '25710538727',
+  *   callInNumbers: [ [Object] ],
+  *   links: [ [Object] ]
+  * },
+  * meetingOptions: {
+  * enabledChat: true,
+  * enabledVideo: true,
+  * enabledPolling: false,
+  * enabledNote: true,
+  * noteType: 'allowAll',
+  * enabledClosedCaptions: false,
+  * enabledFileTransfer: true,
+  * enabledUCFRichMedia: true
+  * },
+  * sessionTypeId: 159,
+  * scheduledType: 'meeting',
+  * simultaneousInterpretation: { enabled: true, interpreters: [ [Object], [Object] ] }
+  * }
   */
  
