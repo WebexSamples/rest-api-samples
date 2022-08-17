@@ -25,10 +25,14 @@
  *
  */
 
-const https = require('https');
-const readline = require('readline');
+const https = require('https');       // https://nodejs.org/api/https.html
+const readline = require('readline'); // https://nodejs.org/api/readline.html
 
-const myWebexDeveloperToken = 'YOUR WEBEX TOKEN';
+// You can set your WEBEXTOKEN env to your 12-hour token, OR...
+const myWebexDeveloperToken = (typeof process.env.WEBEXTOKEN !=='undefined' )
+    ? process.env.WEBEXTOKEN // Sets the token from your system's ENV if you've done that, OR...
+    : 'REPLACE ME WITH YOUR WEBEX DEVELOPER PERSONAL ACCESS TOKEN'; // ...replace this text with your 12-hour token
+
 const hostname = 'webexapis.com';
 const meetingsPath = '/v1/meetings';
 
