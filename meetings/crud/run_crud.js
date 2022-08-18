@@ -15,6 +15,7 @@
  *         Personal Access Token" in the middle of the page.
  * Step 3: Replace the string on the line that defines const myWebexDeveloperToken,
  *         just below, with your personal bearer (access) token. Hit "save".
+ *         NOTE: You can also set an ENV variable called WEBEXTOKEN instead.
  * Step 4: Run this file with node from within
  *         this directory on the command line:
  *
