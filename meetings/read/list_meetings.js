@@ -27,7 +27,10 @@
 
 const https = require('https'); // https://nodejs.org/api/https.html
 
-const myWebexDeveloperToken = 'REPLACE ME WITH YOUR WEBEX DEVELOPER PERSONAL ACCESS TOKEN';
+// You can set your WEBEXTOKEN env to your 12-hour token, OR...
+const myWebexDeveloperToken = (typeof process.env.WEBEXTOKEN !=='undefined' )
+    ? process.env.WEBEXTOKEN // Sets the token from your system's ENV if you've done that, OR...
+    : 'REPLACE ME WITH YOUR WEBEX DEVELOPER PERSONAL ACCESS TOKEN'; // ...replace this text with your 12-hour token
 
 const options = {
   method: 'GET',
