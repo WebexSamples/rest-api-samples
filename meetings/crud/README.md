@@ -10,7 +10,7 @@ See `Get a Token` in the main [/README.md](../../README.md)
 
 This sample is JS, intended to be run via Node:
 
-`node ./crud.js`
+`node ./run_crud.js`
 
 At the time of writing, we're using the latest LTS release of Node.
 
