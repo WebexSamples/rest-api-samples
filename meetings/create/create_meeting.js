@@ -27,6 +27,9 @@
 
 const https = require('https'); // https://nodejs.org/api/https.html
 
+const myDateStart = new Date(Date.now() + (24000 * 60 * 60)).toISOString(); // 24 Hours from Now
+const myDateEnd   = new Date(Date.now() + (25000 * 60 * 60)).toISOString(); // 25 Hours from Now
+
 // You can set your WEBEXTOKEN env to your 12-hour token, OR...
 const myWebexDeveloperToken = (typeof process.env.WEBEXTOKEN !=='undefined' )
     ? process.env.WEBEXTOKEN // Sets the token from your system's ENV if you've done that, OR...
@@ -34,8 +37,8 @@ const myWebexDeveloperToken = (typeof process.env.WEBEXTOKEN !=='undefined' )
 
 const body = JSON.stringify({
   title: 'Book Club Discussion: Curious George', // String, Required | Meeting title. The title can be a maximum of 128 characters long.
-  start: '2022-08-12T13:51:43-04:00',            // String, Required | https://en.wikipedia.org/wiki/ISO_8601 format
-  end: '2022-08-12T14:38:16-04:00',              // String, Required | Replace the start/end with the times you'd like
+  start: myDateStart,                            // String, Required | https://en.wikipedia.org/wiki/ISO_8601 format
+  end:   myDateEnd,                              // String, Required | Replace the start/end with the times you'd like
 });
 
 const options = {
