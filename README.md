@@ -55,9 +55,6 @@ See sample code in this repo under [./meetings/delete/](./meetings/delete/)
 
 At the time of writing, we're using the latest LTS release of Node.
 
-- https://nodejs.dev/learn/making-http-requests-with-nodejs
-
-
 ## Don't be a Stranger
 
 - https://developer.webex.com/docs
